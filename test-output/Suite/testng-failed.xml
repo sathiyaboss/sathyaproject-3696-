@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="un2" value="python"/>
+  <parameter name="un1" value="java"/>
+  <parameter name="ps2" value="789"/>
+  <parameter name="ps1" value="123"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.alltestng.AllTestNG">
+        <methods>
+          <include name="tc1" invocation-numbers="0"/>
+          <include name="tc4"/>
+        </methods>
+      </class> <!-- org.alltestng.AllTestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
